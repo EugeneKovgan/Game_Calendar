@@ -17,7 +17,6 @@ body {
     padding: 0px 10px;
 }
 
-
 /*++++++++++++++++
 ++ MENU ADAPTIV ++
 ++++++++++++++++*/
@@ -31,7 +30,7 @@ body {
 }
 
 .header::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -89,7 +88,7 @@ body {
     transition: all 0.5s ease 0s;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     body.lock {
         overflow: hidden;
     }
@@ -119,7 +118,7 @@ body {
     }
     .header__burger::before,
     .header__burger::after {
-        content: '';
+        content: "";
         background-color: #ffffff;
         position: absolute;
         width: 100%;
@@ -167,8 +166,10 @@ body {
     .header__link {
         font-size: 24px;
     }
+    input:focus {
+        font-size: 16px;
+    }
 }
-
 
 /*+++++++++++
 ++ CONTENT ++
@@ -195,28 +196,31 @@ p {
     font-size: 15px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .content {
         padding: 70px 0px 30px 0px;
+    }
+    input:focus {
+        font-size: 16px;
     }
 }
 
 .games-list .games-list__container div:not([class]),
 a.linkMenu {
     display: block;
-    border: 2px solid #D3D3D3;
+    border: 2px solid #d3d3d3;
     border-radius: 5px;
     margin: 15px 30px 10px 0px;
     padding: 10px;
     box-sizing: border-box;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .games-list .games-list__container div:not([class]):hover,
 .games-list .games-list__container div:not([class]):hover,
 a.linkMenu:hover {
     border-color: dodgerblue;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .games-list .games-list__container div:not([class]):focus,
@@ -224,7 +228,7 @@ a.linkMenu:hover {
 a.linkMenu::focus {
     border-color: dodgerblue;
     box-shadow: 0px 0px 8px 0px dodgerblue;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .titleGame {
@@ -254,7 +258,6 @@ a.linkMenu::focus {
     /* background-color: #f1f1f1; */
 }
 
-
 /*++++++++++
 ++ FOOTER +
 ++++++++++*/
@@ -278,15 +281,17 @@ a.linkMenu::focus {
     z-index: 5;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .footer {
         height: 20px;
     }
     .footer_content {
         left: -10px;
     }
+    input:focus {
+        font-size: 16px;
+    }
 }
-
 
 /*+++++++++++++++++++
 ++ FORMS ADD GAMES ++
@@ -296,7 +301,7 @@ fieldset {
     margin: 0px 5px 5px 5px;
     padding: 10px 10px 10px 15px;
     border-radius: 5px;
-    border: 3px solid #D3D3D3;
+    border: 3px solid #d3d3d3;
     font-size: 18px;
 }
 
@@ -316,10 +321,9 @@ textarea {
     outline: none;
     padding: 5px;
     box-sizing: border-box;
-    border: 2px solid #D3D3D3;
-    transition: .5s;
+    border: 2px solid #d3d3d3;
+    transition: 0.5s;
 }
-
 
 /* 
 input:hover,
@@ -373,15 +377,14 @@ textarea {
     transition: top 0.5s ease, color 0.5s ease, font-size 0.5s ease;
 }
 
-.form_label input:valid+.placeholder,
-.form_label input:focus+.placeholder,
-.form_label textarea:valid+.placeholder,
-.form_label textarea:focus+.placeholder {
+.form_label input:valid + .placeholder,
+.form_label input:focus + .placeholder,
+.form_label textarea:valid + .placeholder,
+.form_label textarea:focus + .placeholder {
     top: 10px;
     font-size: 10px;
     color: #222;
 }
-
 
 /* ONE */
 
@@ -392,13 +395,13 @@ textarea {
     transition: border-color 0.5s ease;
 }
 
-.form_label input+.placeholder {
+.form_label input + .placeholder {
     left: 8px;
     padding: 0 5px;
 }
 
-.form_label input:valid+.placeholder,
-.form_label input:focus+.placeholder {
+.form_label input:valid + .placeholder,
+.form_label input:focus + .placeholder {
     top: 20px;
     font-size: 10px;
     color: #222;
@@ -409,18 +412,16 @@ textarea {
 .form_label textarea:focus {
     border-color: dodgerblue;
     box-shadow: 0px 0px 8px 0px dodgerblue;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .form_label input:hover,
 .form_label textarea:hover {
     border-color: dodgerblue;
-    transition: .5s;
+    transition: 0.5s;
 }
 
-
 /* TWO */
-
 
 /* 
 input:hover,
@@ -436,9 +437,7 @@ textarea:focus {
     transition: .3s;
 } */
 
-
 /*задаем стили кнопки выбора файла*/
-
 
 /* задаем стили кнопки сабмит и резет*/
 
@@ -449,8 +448,8 @@ textarea:focus {
     outline: none;
     padding: 10px;
     box-sizing: border-box;
-    transition: .5s;
-    border: 2px solid #D3D3D3;
+    transition: 0.5s;
+    border: 2px solid #d3d3d3;
 }
 
 .submitBtn {
