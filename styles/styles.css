@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.container_wraper {
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+
+/*++++++++++++++++
+++ MENU ADAPTIV ++
+++++++++++++++++*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    z-index: 2;
+}
+
+.header__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.heder__logo {
+    flex: 0 0 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+.heder__logo img {
+    max-width: 100%;
+    display: block;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.header__list li {
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+}
+
+.header__link {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease 0s;
+}
+
+@media(max-width:767px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .header__body {
+        height: 50px;
+    }
+    .heder__logo {
+        flex: 0 0 40px;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        /* position: relative; */
+        z-index: 3;
+        cursor: pointer;
+    }
+    .header__burger span {
+        position: absolute;
+        background-color: #ffffff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.5s ease 0s;
+    }
+    .header__burger::before,
+    .header__burger::after {
+        content: '';
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0px;
+        transition: all 0.5s ease 0s;
+    }
+    .header__burger::before {
+        top: 0;
+    }
+    .header__burger::after {
+        bottom: 0;
+    }
+    .header__burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .header__menu {
+        position: fixed;
+        top: -100%;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transition: all 0.5s ease 0s;
+        background-color: #18b5a4;
+        padding: 70px 10px 20px 10px;
+    }
+    .header__menu.active {
+        top: 0;
+    }
+    .header__list {
+        display: block;
+    }
+    .header__list li {
+        margin: 0px 0px 20px 0px;
+    }
+    .header__link {
+        font-size: 24px;
+    }
+}
+
+
+/*+++++++++++
+++ CONTENT ++
++++++++++++*/
+
+p {
+    line-height: 2;
+}
+
+.content {
+    padding: 100px 20px 60px 20px;
+}
+
+.content__text {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.descriptionP {
+    white-space: pre-wrap;
+}
+
+.error {
+    font-size: 15px;
+}
+
+@media (max-width:767px) {
+    .content {
+        padding: 70px 0px 30px 0px;
+    }
+}
+
+.games-list .games-list__container div:not([class]),
+a.linkMenu {
+    display: block;
+    border: 2px solid #D3D3D3;
+    border-radius: 5px;
+    margin: 15px 30px 10px 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.games-list .games-list__container div:not([class]):hover,
+.games-list .games-list__container div:not([class]):hover,
+a.linkMenu:hover {
+    border-color: dodgerblue;
+    transition: .5s;
+}
+
+.games-list .games-list__container div:not([class]):focus,
+.games-list .games-list__container div:not([class]):focus,
+a.linkMenu::focus {
+    border-color: dodgerblue;
+    box-shadow: 0px 0px 8px 0px dodgerblue;
+    transition: .5s;
+}
+
+.titleGame {
+    color: lightcoral;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.datePublic {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.collapsible {
+    margin: 0px 30px 0px 0px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.contentCollapsible {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    /* background-color: #f1f1f1; */
+}
+
+
+/*++++++++++
+++ FOOTER +
+++++++++++*/
+
+.footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: blueviolet;
+    height: 40px;
+}
+
+.footer_content {
+    color: black;
+    position: relative;
+    z-index: 3;
+    margin: 0px 0px 0px 20px;
+    z-index: 5;
+}
+
+@media (max-width:767px) {
+    .footer {
+        height: 20px;
+    }
+    .footer_content {
+        left: -10px;
+    }
+}
+
+
+/*+++++++++++++++++++
+++ FORMS ADD GAMES ++
++++++++++++++++++++*/
+
+fieldset {
+    margin: 0px 5px 5px 5px;
+    padding: 10px 10px 10px 15px;
+    border-radius: 5px;
+    border: 3px solid #D3D3D3;
+    font-size: 18px;
+}
+
+.form_label,
+.input_price_game {
+    padding: 0px;
+    font-size: 18px;
+    display: block;
+    margin: 0px 5px 5px px;
+}
+
+input,
+textarea {
+    /* margin: 5px 5px 0px 0px; */
+    border-radius: 5px;
+    /* height: 30px; */
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #D3D3D3;
+    transition: .5s;
+}
+
+
+/* 
+input:hover,
+textarea:hover {
+    border-color: dodgerblue;
+    transition: .3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: dodgerblue;
+    box-shadow: 0px 0px 8px 0px dodgerblue;
+    transition: .3s;
+} */
+
+textarea {
+    width: 100%;
+    min-height: 10px;
+    resize: vertical;
+    height: 6rem;
+}
+
+.form_label {
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+.form_label input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form_label .placeholder {
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #aaa;
+    background-color: white;
+    transition: top 0.5s ease, color 0.5s ease, font-size 0.5s ease;
+}
+
+.form_label input:valid+.placeholder,
+.form_label input:focus+.placeholder,
+.form_label textarea:valid+.placeholder,
+.form_label textarea:focus+.placeholder {
+    top: 10px;
+    font-size: 10px;
+    color: #222;
+}
+
+
+/* ONE */
+
+.form_label input,
+.form_label textarea {
+    background: none;
+    border: 2px solid #ddd;
+    transition: border-color 0.5s ease;
+}
+
+.form_label input+.placeholder {
+    left: 8px;
+    padding: 0 5px;
+}
+
+.form_label input:valid+.placeholder,
+.form_label input:focus+.placeholder {
+    top: 20px;
+    font-size: 10px;
+    color: #222;
+    background: #fff;
+}
+
+.form_label input:focus,
+.form_label textarea:focus {
+    border-color: dodgerblue;
+    box-shadow: 0px 0px 8px 0px dodgerblue;
+    transition: .5s;
+}
+
+.form_label input:hover,
+.form_label textarea:hover {
+    border-color: dodgerblue;
+    transition: .5s;
+}
+
+
+/* TWO */
+
+
+/* 
+input:hover,
+textarea:hover {
+    border-color: dodgerblue;
+    transition: .3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: dodgerblue;
+    box-shadow: 0px 0px 8px 0px dodgerblue;
+    transition: .3s;
+} */
+
+
+/*задаем стили кнопки выбора файла*/
+
+
+/* задаем стили кнопки сабмит и резет*/
+
+.button {
+    width: 100px;
+    border-radius: 5px;
+    margin: 15px 30px 10px 0px;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .5s;
+    border: 2px solid #D3D3D3;
+}
+
+.submitBtn {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+}
+
+.submitBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.submitBtn:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    cursor: pointer;
+}
+
+.submitBtn:active {
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
