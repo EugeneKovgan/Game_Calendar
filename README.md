@@ -1,5 +1,11 @@
 # Game_Calendar
 
+https://eugenekovgan.github.io/Game_Calendar/
+
+for add new fame :
+login:test@user.by
+pass: test@user
+
 # firebase-test
 
 ```
