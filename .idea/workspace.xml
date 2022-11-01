@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3a1b9d4d-42f4-49bd-8729-e1dbfb2af1e7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/components.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/firebase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/pages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/img/500_F_186105992_PS4Ew3SaT24gwQxON8HLoIZnkYHdb6zq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/img/500_F_349630186_AUPrunniXNPHpnE9k1sayhhtLQ1CKNeK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/img/500_F_41125405_tRynibOv5a28RgS0xhT1431hSHzMaWmK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/img/500_F_97529253_vWiLx0znKzNDbU38dvlTDFJF4jvI85gt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/img/500_F_186105992_PS4Ew3SaT24gwQxON8HLoIZnkYHdb6zq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/img/500_F_349630186_AUPrunniXNPHpnE9k1sayhhtLQ1CKNeK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/img/500_F_41125405_tRynibOv5a28RgS0xhT1431hSHzMaWmK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/img/500_F_97529253_vWiLx0znKzNDbU38dvlTDFJF4jvI85gt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2GxdkISGZiq1kOh3IEmD5GsZ1aQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/JS/Game_Calendar",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MTCustomThemeConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a1b9d4d-42f4-49bd-8729-e1dbfb2af1e7" name="Changes" comment="" />
+      <created>1667334309776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667334309776</updated>
+      <workItem from="1667334311044" duration="388000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
